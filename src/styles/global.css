@@ -1,5 +1,6 @@
 @import './reset.css';
 @import "open-props/style";
+
 /*  */
 /* Fluid font size variables, for browsers that support clamp */
 @supports (font-size: clamp(1rem, 1vw, 1rem)) {
@@ -37,4 +38,18 @@
             --font-size-xxxl: 4.73rem;
         }
     }
+}
+
+@font-face {
+    font-family: 'Mona Sans';
+    src:
+        url('/fonts/Mona-Sans.woff2') format('woff2 supports variations'),
+        url('/fonts/Mona-Sans.woff2') format('woff2-variations');
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+}
+
+html {
+    --font-family: 'Mona Sans';
+    font-family: var(--font-family);
 }
