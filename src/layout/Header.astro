@@ -1,0 +1,52 @@
+---
+---
+
+<header>
+  <nav class="nav">
+    <div class="nav__logo">
+      <a href="">eniola</a>
+    </div>
+    <div class="nav__links">
+      <a href="">works</a>
+      <a href="">about</a>
+      <a href="https://github.com/eniolajayi" target="_blank">github</a>
+    </div>
+  </nav>
+</header>
+
+<style lang="scss">
+  header {
+    padding-inline: var(--size-fluid-4);
+    padding-block: var(--size-fluid-1);
+  }
+
+  .nav {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--font-size-base);
+
+    &__logo {
+    }
+
+    &__links {
+      flex-basis: var(--size-13);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  a {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-stretch: 75%;
+    text-decoration: none;
+    color: var(--gray-10);
+    // TODO extract common styles
+    // TODO group layout?
+    // TODO Create StyledLink component for heading links?
+    
+  }
+</style>

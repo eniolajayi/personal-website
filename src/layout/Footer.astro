@@ -1,0 +1,41 @@
+---
+const date = new Date();
+const currentYear = date.getFullYear();
+---
+
+<footer class="footer">
+  <div class="footer__container">
+    <a href="">proverbs 22:29</a>
+    <small title="All rights reserved">&#169; {currentYear}</small>
+    <a href="">ajayi</a>
+  </div>
+</footer>
+
+<style lang="scss">
+  .footer {
+    padding-inline: var(--size-fluid-4);
+    padding-block: var(--size-fluid-1);
+
+    &__container {
+      inline-size: 100%;
+      font-size: var(--font-size-base);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  small {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-stretch: 75%;
+    color: var(--gray-8);
+  }
+
+  a {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-stretch: 75%;
+    text-decoration: none;
+    color: var(--gray-10);
+  }
+</style>

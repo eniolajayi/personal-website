@@ -49,7 +49,34 @@
     font-stretch: 75% 125%;
 }
 
-html {
-    --font-family: 'Mona Sans';
-    font-family: var(--font-family);
+
+html {}
+
+body {
+    --sb-track-color: #232433;
+    --sb-thumb-color: #6b7aaf;
+    --sb-size: 10px;
+
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+    font-family: 'Mona Sans';
+}
+
+body::-webkit-scrollbar {
+    width: var(--sb-size)
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 10px;
+
+}
+
+.font-heading {
+    font-weight: 600;
+    font-stretch: 125%;
 }
