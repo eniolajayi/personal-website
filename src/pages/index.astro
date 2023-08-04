@@ -49,16 +49,19 @@ import Header from "../layout/Header.astro";
         min-block-size: calc(var(--size-15) + var(--size-10));
         display: grid;
         place-items: center;
+        background-color: var(--gray-11);
       }
 
       .main__heading {
-        font-size: var(--font-size-xl);
-        font-weight: 600;
-        font-stretch: 125%;
-        text-align: left;
+        text-align: center;
         max-inline-size: var(--size-header-1);
+        color: var(--gray-0);
+
         a {
-          text-decoration: none;
+          &:hover {
+            font-weight: 900;
+            font-stretch: 75%;
+          }
         }
 
         .orng {
@@ -82,32 +85,34 @@ import Header from "../layout/Header.astro";
         // block-size: var(--size-15);
       }
 
-      .contact,
-      .projects,
-      .about {
+      .contact {
+        background-color: var(--gray-11);
         &__container {
+          block-size: var(--size-15);
+          padding-inline: var(--size-fluid-4);
+          padding-block: var(--size-fluid-1);
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
 
         &__content {
+          color: var(--gray-0);
+          text-align: center;
+
           h2 {
-            text-transform: uppercase;
-            font-weight: 500;
-            font-stretch: 75%;
-            font-size: var(--font-size-xl);
             margin-block-end: var(--size-relative-1);
           }
 
           p {
-            max-inline-size: var(--size-content-2);
-            margin-block-end: var(--size-relative-1);
+            font-size: var(--font-size-base);
+            max-inline-size: var(--size-header-2);
+            margin-inline: auto;
+            margin-block-end: var(--size-relative-10);
           }
 
           a {
-            text-transform: uppercase;
-            font-weight: 800;
-            font-stretch: 75%;
-            text-decoration: none;
-            color: var(--gray-10);
+            color: var(--gray-0);
             font-size: var(--font-size-base);
           }
         }
