@@ -1,0 +1,80 @@
+---
+import BaseHead from "../layout/BaseHead.astro";
+import Footer from "../layout/Footer.astro";
+import Header from "../layout/Header.astro";
+---
+
+<html lang="en">
+  <BaseHead title={"Eniola Ajayi | Projects"} description={""} />
+  <body>
+    <Header />
+    <main class="about">
+      <div class="about__container">
+        <div class="about__content">
+          <h2 class="font-heading">Projects</h2>
+          <p>
+            I love exploring new ideas. The following is a list of tools that I
+            use to breathe life into ideas.
+          </p>
+          <ul>
+            <li>HTML</li>
+            <li>CSS, SCSS</li>
+            <li>TailwindCSS</li>
+            <li>Javascript, Typescript</li>
+            <li>React, NextJS, Laravel</li>
+            <li>NodeJS</li>
+            <li>SQL, MySQL</li>
+            <li>Github, Git</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <section></section>
+    <Footer />
+    <style lang="scss">
+      .about {
+        min-block-size: var(--size-15);
+        background-color: var(--gray-11);
+      }
+      .about__content {
+        padding-block: var(--size-8);
+        color: var(--gray-0);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+          margin-block-end: var(--size-4);
+        }
+
+        p {
+          line-height: var(--font-lineheight-3);
+          max-inline-size: var(--size-content-2);
+          font-size: var(--font-size-base);
+        }
+      }
+
+      ul {
+        max-inline-size: var(--size-content-3);
+        margin-block-start: var(--size-5);
+        display: flex;
+        gap: var(--size-3);
+        justify-content: center;
+        flex-wrap: wrap;
+
+        li {
+          margin-inline: var(--size-5);
+          text-align: start;
+          padding-inline-start: var(--size-1);
+          font-weight: 500;
+        }
+
+        li::marker {
+          color: #9ca5f6;
+          content: "→";
+        }
+      }
+    </style>
+  </body>
+</html>
