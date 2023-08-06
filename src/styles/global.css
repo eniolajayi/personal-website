@@ -59,6 +59,11 @@ body {
     --sb-border-radius: var(--radius-round);
 
     scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+
+    --brand-color-orange: #f6ce9c;
+    --brand-color-purple: #9ca5f6;
+    --brand-color-green: #bef6d5;
+
     font-family: 'Mona Sans';
 }
 
@@ -96,6 +101,7 @@ a {
     a:hover {
         font-weight: 900;
         font-stretch: 125%;
+        color: var(--hover-color, var(--gray-0));
     }
 }
 
