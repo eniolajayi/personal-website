@@ -15,10 +15,10 @@ import Header from "../layout/Header.astro";
         <div class="main__content">
           <h1 class="main__heading">
             Hi 👋, I'm Eniola Ajayi. Frontend Engineer currently based at Ogun
-            state, Nigeria
+            state, Nigeria.
           </h1>
           <p class="main__intro">
-            view featured <a href="/projects" class="orng">Projects</a>,
+            View featured <a href="/projects" class="orng">Projects</a>,
             download
             <a href="" class="prpl">Resume</a> or learn more <a
               href="/about"
@@ -45,16 +45,22 @@ import Header from "../layout/Header.astro";
     <style lang="scss">
       .main__container {
         min-block-size: 100vh;
-        display: grid;
-        place-items: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-color: var(--gray-11);
+      }
+      .main__content {
+        h1 {
+          margin-inline: auto;
+        }
       }
 
       .main__heading {
         text-align: center;
         max-inline-size: var(--size-header-1);
         color: var(--gray-0);
-        font-weight:500;
+        font-weight:400;
       }
 
       .main__heading:is(h1) {
@@ -65,7 +71,7 @@ import Header from "../layout/Header.astro";
         text-align: center;
         max-inline-size: var(--size-header-2);
         color: var(--gray-0);
-        font-size: var(--font-size-lg);
+        font-size: var(--font-size-xl);
         font-stretch: 125%;
         line-height: var(--font-lineheight-1);
         // font-weight: 500;
