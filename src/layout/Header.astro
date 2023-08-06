@@ -32,6 +32,9 @@
     font-size: var(--font-size-base);
 
     &__logo {
+      @media screen and (max-width: 480px) {
+        flex-basis: 90%;
+      }
     }
 
     &__links {
@@ -40,8 +43,13 @@
       justify-content: space-between;
       align-items: center;
 
+      @media screen and (max-width: 480px) {
+        gap: var(--size-3);
+      }
+
       a {
         --hover-color: var(--brand-color-purple);
+       
       }
     }
   }
