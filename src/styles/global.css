@@ -82,7 +82,7 @@ body::-webkit-scrollbar-thumb {
 
 h1,
 h2 {
-    font-weight: 900;
+    font-weight: 700;
     font-stretch: 125%;
     font-size: var(--font-size-xl);
     line-height: var(--font-lineheight-1);
